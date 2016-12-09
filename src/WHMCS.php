@@ -103,4 +103,45 @@ class WHMCS extends WhmcsCore {
 
         return $this->submitRequest($data);
     }
+
+    /**
+     * Adds order to client
+     * 
+     * @param array $data
+     * @return array
+     */
+    public function addOrder($data)
+    {
+        $data['action'] = 'addorder';
+
+        return $this->submitRequest($data);
+    }
+
+    /**
+     * Checks the domain whois for availability
+     * 
+     * @param array $data
+     * @return array
+     */
+    public function domainWhois($data)
+    {
+        $data['action'] = 'domainwhois';
+        return $this->submitRequest($data);
+    }
+
+    public function updateClient($data)
+    {
+        $data['action'] = 'updateclient';
+        return $this->submitRequest($data);
+    }
+
+    /**
+     * Must pass the action with the request
+     *
+     * @param $data
+     */
+    public function processRequest($data)
+    {
+
+    }
 }
