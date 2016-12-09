@@ -9,7 +9,7 @@ To install the package, simply add the following to your Laravel installation's 
 ```json
 "require": {
 	"laravel/framework": "5.*",
-	"nicklaw5/laravel-whmcs": "dev-master"
+	"corydemille/laravel-whmcs": "dev-master"
 },
 ```
 
